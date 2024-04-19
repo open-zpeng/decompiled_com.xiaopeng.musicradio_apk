@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xiaopeng.xui.widget.XFrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/item_view" android:layout_width="158dp" android:layout_height="wrap_content">
+    <com.xiaopeng.musicradio.widget.MusicCircleImageView android:layout_gravity="center_horizontal" android:id="@+id/item_logo" android:layout_width="158dp" android:layout_height="158dp" app:border_color="@color/color_black_4" app:border_width="1px" app:round_radius="0dp"/>
+    <com.xiaopeng.xui.widget.XFrameLayout android:layout_gravity="center_horizontal" android:id="@+id/item_layout" android:background="@drawable/shape_play_selector_180" android:layout_width="158dp" android:layout_height="158dp" app:vuiElementType="BUTTON"/>
+    <com.xiaopeng.xui.widget.XTextView android:id="@+id/tv_speech_num" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/style_speech_num_big_rect_album"/>
+    <com.xiaopeng.xui.widget.XFrameLayout android:layout_gravity="right" android:background="@drawable/shape_play_icon_mask" android:layout_width="56dp" android:layout_height="56dp" android:layout_marginTop="102dp">
+        <com.xiaopeng.xui.widget.XImageView android:layout_gravity="center" android:id="@+id/play_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_btn_playall"/>
+        <com.xiaopeng.xui.widget.XFrameLayout android:id="@+id/play_item_layout" android:background="@drawable/shape_play_selector_180" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </com.xiaopeng.xui.widget.XFrameLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="170dp" android:layout_centerHorizontal="true">
+        <com.xiaopeng.xui.widget.XImageView android:id="@+id/hot_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp"/>
+        <com.xiaopeng.xui.widget.XTextView android:textSize="@dimen/x_font_body_02_size" android:textColor="@color/x_theme_text_02" android:ellipsize="end" android:id="@+id/radio_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+    </LinearLayout>
+</com.xiaopeng.xui.widget.XFrameLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xiaopeng.xui.widget.XRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/layout_item_root" android:layout_width="match_parent" android:layout_height="120dp" app:vuiEnableViewVuiMode="true">
+    <com.xiaopeng.xui.view.XView android:id="@+id/view_item_vui" android:layout_width="match_parent" android:layout_height="120dp" app:vuiAction="Click" app:vuiEnableViewVuiMode="true"/>
+    <com.xiaopeng.xui.widget.XImageView android:id="@+id/iv_click_view" android:background="@drawable/x_list_item_selector" android:layout_width="match_parent" android:layout_height="120dp"/>
+    <com.xiaopeng.xui.widget.XImageView android:id="@+id/tv_index_bg" android:layout_centerVertical="true" style="@style/style_music_index"/>
+    <com.xiaopeng.xui.widget.XTextView android:id="@+id/rank_number" android:layout_centerVertical="true" style="@style/style_music_index_text"/>
+    <com.xiaopeng.xui.widget.XImageView android:id="@+id/iv_fav_icon" android:layout_width="80dp" android:layout_height="80dp" android:layout_marginLeft="74dp" android:src="@drawable/bg_btn_love_selector" android:scaleType="center" android:layout_centerVertical="true" app:vuiElementType="CHECKBOX" app:vuiEnableViewVuiMode="true" app:vuiLabel="@string/xui_collect"/>
+    <com.xiaopeng.xui.widget.XLoading android:id="@+id/lottie_loading" android:visibility="gone" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginLeft="92dp" android:layout_centerVertical="true" style="@style/XLoading.Small"/>
+    <com.xiaopeng.musicradio.widget.MusicCircleImageView android:id="@+id/iv_logo" android:layout_width="72dp" android:layout_height="72dp" android:layout_marginLeft="192dp" android:layout_centerVertical="true" app:border_color="#0f000000" app:border_width="1px" app:round_radius="8dp"/>
+    <com.xiaopeng.xui.widget.XImageView android:id="@+id/iv_logo_shadow" android:layout_width="72dp" android:layout_height="72dp" android:layout_marginLeft="192dp" android:src="@drawable/search_album_item_shadow_small" android:layout_centerVertical="true"/>
+    <com.xiaopeng.musicradio.widget.PlayStateWidget android:id="@+id/iv_play_list_state" android:layout_width="72dp" android:layout_height="72dp" android:layout_marginLeft="192dp" android:layout_centerVertical="true" app:vuiMode="DISABLED"/>
+    <com.xiaopeng.xui.widget.XTextView android:id="@+id/tv_title" android:layout_marginLeft="282dp" android:layout_marginTop="24dp" android:layout_marginBottom="4dp" style="@style/SearchSongItem.Title"/>
+    <com.xiaopeng.musicradio.view.mymusic.MusicListItemLabelView android:id="@+id/music_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="278dp" android:layout_marginTop="5dp" android:layout_below="@+id/tv_title"/>
+    <com.xiaopeng.xui.widget.XTextView android:id="@+id/tv_sub_title" android:layout_toRightOf="@+id/music_label" android:layout_below="@+id/tv_title" style="@style/SearchSongItem.SubTitle"/>
+    <com.xiaopeng.xui.widget.XImageView android:id="@+id/iv_selected_view" android:background="@drawable/music_item_selected_bg" android:layout_width="match_parent" android:layout_height="120dp"/>
+</com.xiaopeng.xui.widget.XRelativeLayout>

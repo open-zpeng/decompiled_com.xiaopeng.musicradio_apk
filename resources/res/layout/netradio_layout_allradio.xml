@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xiaopeng.xui.widget.XLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.xiaopeng.xui.widget.XLinearLayout android:orientation="horizontal" android:id="@+id/title_layout" android:layout_width="wrap_content" android:layout_height="90dp" android:layout_marginLeft="16dp" android:layout_marginTop="-10dp" app:vuiElementType="BUTTON" app:vuiEnableViewVuiMode="true" app:vuiLabel="@string/netradio_allradio_title">
+        <com.xiaopeng.xui.widget.XTextView android:textSize="28sp" android:textColor="@color/x_theme_text_01" android:layout_gravity="center_vertical" android:id="@+id/allradio_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/netradio_allradio_title"/>
+        <com.xiaopeng.xui.widget.XImageView android:layout_gravity="center_vertical" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginLeft="12dp" android:src="@drawable/x_ic_small_back" android:rotation="180"/>
+    </com.xiaopeng.xui.widget.XLinearLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="16dp" android:layout_marginTop="4dp" android:layout_marginRight="30dp">
+        <com.xiaopeng.musicradio.widget.recyclerview.BaseRecycleView android:id="@+id/allradio_rv" android:fadingEdgeLength="@dimen/list_shape_height" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never" android:requiresFadingEdge="vertical" android:nestedScrollingEnabled="false"/>
+        <com.xiaopeng.musicradio.widget.LoadingTipsView android:id="@+id/allradio_loading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="200dp" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+</com.xiaopeng.xui.widget.XLinearLayout>

@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xiaopeng.musicradio.music.concentration.radio.view.MsRadioItemLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/radio_item_layout" android:background="@color/transparent" android:layout_width="164dp" android:layout_height="wrap_content"/>

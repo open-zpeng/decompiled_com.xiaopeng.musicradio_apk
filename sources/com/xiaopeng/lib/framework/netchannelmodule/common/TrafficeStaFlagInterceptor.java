@@ -1,0 +1,16 @@
+package com.xiaopeng.lib.framework.netchannelmodule.common;
+
+import android.util.Log;
+import okhttp3.Interceptor;
+import okhttp3.Response;
+/* loaded from: classes.dex */
+public class TrafficeStaFlagInterceptor implements Interceptor {
+    private static final String TAG = "TrafficFlag";
+
+    @Override // okhttp3.Interceptor
+    public Response intercept(Interceptor.Chain chain) {
+        Log.i(TAG, "setTraficInfo:\t" + Thread.currentThread().getId());
+        TrafficStatsEntry.setTraficInfo();
+        return chain.proceed(chain.request());
+    }
+}

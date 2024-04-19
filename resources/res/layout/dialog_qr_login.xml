@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="-18dp">
+    <FrameLayout android:gravity="center" android:layout_width="300dp" android:layout_height="300dp">
+        <com.xiaopeng.xui.widget.XImageView android:layout_gravity="center" android:id="@+id/iv_qr_code_bg" android:background="@drawable/bg_qr_code_bg_wx" android:layout_width="300dp" android:layout_height="300dp"/>
+        <com.xiaopeng.xui.widget.XImageView android:layout_gravity="center" android:id="@+id/iv_qr_code" android:layout_width="@dimen/qr_code_size_wx" android:layout_height="@dimen/qr_code_size_wx"/>
+        <com.xiaopeng.xui.widget.XImageView android:layout_gravity="center" android:id="@+id/iv_qr_code_overlay" android:background="@drawable/bg_qr_code_overlay" android:layout_width="300dp" android:layout_height="300dp"/>
+        <com.xiaopeng.musicradio.widget.MusicCircleImageView android:layout_gravity="center" android:id="@+id/iv_qr_code_fail" android:layout_width="300dp" android:layout_height="300dp" android:src="@drawable/ic_qr_code_fail" app:border_color="@android:color/transparent" app:border_width="0px" app:round_radius="@dimen/dp_6"/>
+        <com.xiaopeng.xui.widget.XImageView android:layout_gravity="center" android:id="@+id/iv_qr_retry" android:layout_width="300dp" android:layout_height="300dp" android:src="@drawable/ic_qr_login_refresh" android:scaleType="center"/>
+        <com.xiaopeng.xui.widget.XLoading android:layout_gravity="center" android:id="@+id/v_loading" android:visibility="gone" style="@style/XLoading.XLarge"/>
+    </FrameLayout>
+    <com.xiaopeng.xui.widget.XTextView android:textSize="@dimen/sp_30" android:textColor="@color/x_theme_text_02" android:gravity="center" android:id="@+id/tv_qr_code_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30dp"/>
+    <com.xiaopeng.xui.widget.XTextView android:textSize="@dimen/dp_22" android:textColor="@color/x_theme_text_03" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="63dp" android:text="@string/vip_login_account_tips_1"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_12">
+        <com.xiaopeng.xui.widget.XTextView android:textSize="@dimen/dp_20" android:textColor="@color/x_theme_text_03" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/vip_login_account_tips_2"/>
+        <com.xiaopeng.xui.widget.XTextView android:textSize="@dimen/dp_20" android:textColor="@color/color_forward_normal" android:gravity="center" android:id="@+id/tv_qq_privacy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/vip_login_account_tips_4" app:vuiAction="Click" app:vuiElementType="BUTTON" app:vuiEnableViewVuiMode="true"/>
+        <com.xiaopeng.xui.widget.XTextView android:textSize="@dimen/dp_20" android:textColor="@color/x_theme_text_03" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="、"/>
+        <com.xiaopeng.xui.widget.XTextView android:textSize="@dimen/dp_20" android:textColor="@color/color_forward_normal" android:gravity="center" android:id="@+id/tv_qq_service_agreement" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/vip_login_account_tips_3" app:vuiAction="Click" app:vuiElementType="BUTTON" app:vuiEnableViewVuiMode="true"/>
+    </LinearLayout>
+</LinearLayout>

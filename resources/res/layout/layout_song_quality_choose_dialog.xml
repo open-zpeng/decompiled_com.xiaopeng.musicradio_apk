@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xiaopeng.xui.widget.XRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/root_layout" android:background="@drawable/x_bg_dialog" android:layout_width="900dp" android:layout_height="666dp">
+    <com.xiaopeng.xui.widget.XImageButton android:id="@+id/close" android:layout_width="72dp" android:layout_height="72dp" android:layout_marginLeft="14dp" android:layout_marginTop="14dp" app:vuiDisableHitEffect="true" app:vuiEnableViewVuiMode="true" app:vuiLabel="返回" style="@style/XButton.Icon.Large.Close"/>
+    <com.xiaopeng.xui.widget.XTextView android:textSize="36sp" android:textColor="@color/x_theme_text_01" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="50dp" android:text="音质选择" android:layout_centerHorizontal="true"/>
+    <com.xiaopeng.musicradio.music.tone.view.FavSingleSongQualityLayout android:id="@+id/layout_single_song_quality" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="84dp" android:layout_below="@+id/title"/>
+</com.xiaopeng.xui.widget.XRelativeLayout>

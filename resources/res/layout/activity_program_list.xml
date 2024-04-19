@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xiaopeng.xui.widget.XRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:tag="layout/activity_program_list_0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.xiaopeng.musicradio.widget.ClickableLoadingTipsView android:id="@+id/loading_tips_view" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="@dimen/mini_player_view_height"/>
+    <com.xiaopeng.musicradio.widget.recyclerview.ListRecyclerView android:id="@+id/rv_list" android:layout_marginLeft="@dimen/mine_album_list_margin_left_right" android:layout_marginRight="@dimen/mine_album_list_margin_left_right" android:layout_below="@+id/title_bar" app:spanCount="4" style="@style/XPMine.List.Activity"/>
+    <com.xiaopeng.musicradio.mine.widget.MineTitleBarLayout android:id="@+id/title_bar" style="@style/XPMine.TitleBar"/>
+</com.xiaopeng.xui.widget.XRelativeLayout>

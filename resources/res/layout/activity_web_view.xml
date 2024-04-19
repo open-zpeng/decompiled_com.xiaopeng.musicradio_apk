@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xiaopeng.xui.widget.XFrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:tag="layout/activity_web_view_0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.xiaopeng.xui.widget.XFrameLayout android:id="@+id/window_container" android:layout_width="match_parent" android:layout_height="match_parent">
+        <WebView android:id="@+id/web_view" android:scrollbars="none" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never" android:requiresFadingEdge="none"/>
+        <com.xiaopeng.xui.widget.XImageView android:id="@+id/web_view_overlay" android:background="@drawable/bg_web_view_overlay" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <com.xiaopeng.xui.widget.XFrameLayout android:id="@+id/fl_loading" android:background="@color/x_theme_bg_app_color" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.xiaopeng.xui.widget.XLoading android:layout_gravity="center" android:id="@+id/loading" style="@style/XLoading.XLarge"/>
+        </com.xiaopeng.xui.widget.XFrameLayout>
+        <ViewStub android:id="@+id/layout_h5_fail" android:layout="@layout/layout_web_view_fail" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </com.xiaopeng.xui.widget.XFrameLayout>
+    <com.xiaopeng.xui.widget.XImageButton android:id="@+id/btn_back" android:layout_marginTop="14dp" android:layout_marginStart="14dp" style="@style/XButton.Icon.Large.Back"/>
+    <com.xiaopeng.xui.widget.XTextView android:textSize="36sp" android:textColor="@color/x_theme_text_01" android:id="@+id/tv_title" android:layout_marginLeft="110dp" style="@style/XTitleBar"/>
+</com.xiaopeng.xui.widget.XFrameLayout>

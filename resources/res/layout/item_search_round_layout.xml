@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xiaopeng.xui.widget.XRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.xiaopeng.musicradio.widget.MusicCircleImageView android:id="@+id/iv_logo" android:layout_width="@dimen/dp_190" android:layout_height="@dimen/dp_190" android:layout_centerHorizontal="true" app:border_color="@color/color_black_4" app:border_width="@dimen/dp_1" app:round_radius="0dp"/>
+    <com.xiaopeng.xui.widget.XImageView android:id="@+id/iv_logo_shadow" android:layout_width="@dimen/dp_190" android:layout_height="@dimen/dp_190" android:src="@drawable/search_album_item_shadow" android:layout_alignLeft="@+id/iv_logo" android:layout_alignTop="@+id/iv_logo"/>
+    <com.xiaopeng.xui.widget.XTextView android:textSize="@dimen/x_font_body_02_size" android:id="@+id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" android:layout_below="@+id/iv_logo" android:layout_centerHorizontal="true"/>
+    <com.xiaopeng.musicradio.widget.PlayControlView android:id="@+id/item_play_status_layout" android:layout_width="56dp" android:layout_height="56dp" android:layout_marginRight="@dimen/dp_10" android:layout_marginBottom="10dp" android:layout_alignRight="@+id/iv_logo" android:layout_alignBottom="@+id/iv_logo"/>
+</com.xiaopeng.xui.widget.XRelativeLayout>

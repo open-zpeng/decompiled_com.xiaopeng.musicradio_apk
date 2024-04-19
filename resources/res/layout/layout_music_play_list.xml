@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.xiaopeng.musicradio.widget.recyclerview.EmptyRecyclerView android:id="@+id/rv_list" android:fadingEdgeLength="@dimen/list_shape_height" android:layout_width="match_parent" android:layout_height="1105dp" android:layout_marginTop="@dimen/dp_128" android:overScrollMode="never" android:requiresFadingEdge="vertical" android:nestedScrollingEnabled="true" style="@style/LoadingTipsStyle.Smaller"/>
+</merge>

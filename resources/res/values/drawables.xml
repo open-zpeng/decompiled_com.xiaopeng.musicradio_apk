@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <drawable name="ic_failed_no_list">0</drawable>
+    <drawable name="ic_failed_no_list_e28">0</drawable>
+    <drawable name="ic_failed_no_list_night">0</drawable>
+    <drawable name="ic_failed_no_net">0</drawable>
+    <drawable name="ic_failed_no_net_night">0</drawable>
+    <drawable name="ic_failed_no_net_smaller">0</drawable>
+    <drawable name="ic_failed_no_net_smaller_night">0</drawable>
+    <drawable name="ic_src_bt">0</drawable>
+    <drawable name="ic_src_fm">0</drawable>
+    <drawable name="ic_src_music">0</drawable>
+    <drawable name="ic_src_program">0</drawable>
+    <drawable name="ic_xp_loading">0</drawable>
+    <drawable name="img_fm_cover120">0</drawable>
+    <drawable name="img_ncm_bt_default">0</drawable>
+    <drawable name="img_ncm_music_default">0</drawable>
+    <drawable name="img_ncm_network_default">0</drawable>
+    <drawable name="img_ncm_program_default">0</drawable>
+    <drawable name="img_playing">0</drawable>
+    <drawable name="img_playing_night">0</drawable>
+    <drawable name="material_ic_keyboard_arrow_next_black_24dp">@drawable/material_ic_keyboard_arrow_right_black_24dp</drawable>
+    <drawable name="material_ic_keyboard_arrow_previous_black_24dp">@drawable/material_ic_keyboard_arrow_left_black_24dp</drawable>
+    <drawable name="notification_template_icon_bg">#3333b5e5</drawable>
+    <drawable name="notification_template_icon_low_bg">#0cffffff</drawable>
+    <drawable name="pic_bluetooth_default_100">0</drawable>
+    <drawable name="pic_covers_music_220">0</drawable>
+    <drawable name="pic_covers_music_220_night">0</drawable>
+    <drawable name="pic_covers_music_list_220">0</drawable>
+    <drawable name="pic_covers_music_list_220_night">0</drawable>
+    <drawable name="pic_local_default_100">0</drawable>
+    <drawable name="pic_music_default_100">0</drawable>
+    <drawable name="pic_netradio_cover_240">0</drawable>
+    <drawable name="pic_program_default_220_night">0</drawable>
+    <drawable name="pic_speech_deafult_100">0</drawable>
+    <drawable name="ring_click_bg">0</drawable>
+</resources>

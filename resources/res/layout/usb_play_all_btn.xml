@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xiaopeng.xui.widget.XLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@drawable/x_btn_ghost_large_positive_selector" android:paddingLeft="30dp" android:paddingTop="13dp" android:paddingRight="30dp" android:paddingBottom="13dp" android:layout_width="wrap_content" android:layout_height="wrap_content" app:vuiAction="Click" app:vuiElementType="BUTTON" app:vuiEnableViewVuiMode="true">
+    <com.xiaopeng.xui.widget.XImageView android:layout_gravity="center" android:id="@+id/left_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_btn_playall_black"/>
+    <com.xiaopeng.xui.widget.XTextView android:textSize="@dimen/x_font_body_02_size" android:textColor="@color/x_theme_text_01" android:id="@+id/btn_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14dp"/>
+    <com.xiaopeng.xui.widget.XTextView android:textSize="@dimen/x_font_body_02_size" android:textColor="@color/x_theme_text_01" android:id="@+id/count_txt" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+</com.xiaopeng.xui.widget.XLinearLayout>

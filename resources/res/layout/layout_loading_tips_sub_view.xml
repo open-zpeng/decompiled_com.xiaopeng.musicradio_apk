@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xiaopeng.xui.widget.XLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center" android:orientation="vertical" android:id="@+id/tips_container" android:layout_width="match_parent" android:layout_height="match_parent" app:vuiMode="DISABLED">
+    <com.xiaopeng.xui.widget.XImageView android:id="@+id/error_icon" android:visibility="gone" android:layout_width="190dp" android:layout_height="190dp" android:src="@drawable/x_ic_xxlarge_nowifi" app:vuiMode="DISABLED" style="@style/XIcon.XXLarge"/>
+    <com.xiaopeng.xui.widget.XImageView android:id="@+id/no_result_icon" android:visibility="gone" android:layout_width="190dp" android:layout_height="190dp" android:src="@drawable/x_ic_xxlarge_nodata" app:vuiMode="DISABLED" style="@style/XIcon.XXLarge"/>
+    <com.xiaopeng.xui.widget.XLoading android:id="@+id/loading_icon" android:visibility="gone" app:vuiMode="DISABLED" style="@style/XLoading.XLarge"/>
+    <com.xiaopeng.xui.widget.XTextView android:textSize="@dimen/x_font_body_01_size" android:textColor="@color/x_theme_text_03" android:gravity="center" android:id="@+id/tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="52dp" android:includeFontPadding="false"/>
+</com.xiaopeng.xui.widget.XLinearLayout>

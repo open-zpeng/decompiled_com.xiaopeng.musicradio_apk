@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.xiaopeng.xui.widget.XImageButton android:id="@+id/iv_close" android:layout_width="@dimen/dp_80" android:layout_height="@dimen/dp_80" android:layout_marginLeft="@dimen/dp_32" android:layout_marginTop="25dp" android:layout_centerVertical="true" style="@style/XButton.Icon.Large.Close"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_100">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.xiaopeng.xui.widget.XTextView android:textSize="32sp" android:textColor="@color/color_0f1520" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="全场景日志："/>
+                <Switch android:id="@+id/switch_vui_log" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:switchMinWidth="100dp"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30dp">
+                <com.xiaopeng.xui.widget.XButton android:id="@+id/btn_wx_login" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:text="@string/weixin_login"/>
+                <com.xiaopeng.xui.widget.XButton android:id="@+id/btn_qq_login" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:text="@string/qq_login"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

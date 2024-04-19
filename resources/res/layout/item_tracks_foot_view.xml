@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center" android:orientation="horizontal" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="100dp">
+    <com.xiaopeng.xui.widget.XLoading android:layout_gravity="center_vertical" android:id="@+id/foot_loading" android:layout_width="72dp" android:layout_height="72dp" android:layout_marginRight="10dp" style="@style/XLoading.Medium"/>
+    <com.xiaopeng.xui.widget.XTextView android:textSize="@dimen/x_font_body_02_size" android:textColor="@color/x_theme_text_02" android:layout_gravity="center_vertical" android:id="@+id/tv_track_foot" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="加载中…" app:vuiAction="@string/vui_action_click_play" app:vuiElementType="BUTTON" app:vuiLabel="@string/vui_label_last_listen"/>
+</LinearLayout>

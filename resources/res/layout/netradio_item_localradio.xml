@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xiaopeng.xui.widget.XFrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:vui="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/local_root" android:layout_width="match_parent" android:layout_height="match_parent" vui:vuiMode="DISABLED">
+    <com.xiaopeng.musicradio.netradio.concentration.localradio.view.NrLocationItemLayout android:layout_gravity="center_horizontal" android:id="@+id/location_item" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+</com.xiaopeng.xui.widget.XFrameLayout>

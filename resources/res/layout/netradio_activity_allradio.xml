@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="100dp">
+        <com.xiaopeng.musicradio.widget.DialogTopLayout android:id="@+id/allradio_act_top_title" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <com.xiaopeng.xui.widget.XTextView android:textSize="@dimen/x_font_body_02_size" android:textColor="@color/x_theme_text_04" android:layout_gravity="center_vertical" android:id="@+id/allradio_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="282dp"/>
+    </FrameLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="20dp">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/allradio_act_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.xiaopeng.musicradio.widget.MusicRecyclerTabLayout android:id="@+id/allradio_act_tab" android:background="@color/transparent" android:fadingEdgeLength="@dimen/list_shape_height" android:layout_width="wrap_content" android:layout_height="1280dp" android:requiresFadingEdge="vertical" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toTopOf="0" app:rtl_orientation="vertical" app:rtl_tabIndicatorHeight="0dp"/>
+            <com.xiaopeng.musicradio.commonui.widget.NoScrollViewPager android:id="@+id/allradio_act_viewpager" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="30dp"/>
+        </LinearLayout>
+        <com.xiaopeng.musicradio.widget.LoadingTipsView android:id="@+id/allradio_act_loadingview" android:paddingBottom="150dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="@style/LoadingTipsStyle.Smaller"/>
+    </RelativeLayout>
+</LinearLayout>

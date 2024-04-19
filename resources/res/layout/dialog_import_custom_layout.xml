@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xiaopeng.xui.widget.XRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center_horizontal" android:id="@+id/root_layout" android:background="@drawable/x_bg_dialog" android:layout_width="900dp" android:layout_height="872dp">
+    <com.xiaopeng.xui.widget.XTextView android:textSize="36sp" android:textColor="@color/x_theme_text_01" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="72dp" android:layout_marginTop="23dp" android:text="@string/title_playlist_custom_import" android:layout_centerHorizontal="true"/>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="160dp">
+        <com.xiaopeng.xui.widget.XTextView android:textSize="@dimen/x_font_body_01_size" android:textColor="@color/x_theme_text_01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/playlist_custom_import_text_1"/>
+        <com.xiaopeng.xui.widget.XTextView android:textSize="@dimen/x_font_body_02_size" android:textColor="@color/x_theme_text_03" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:text="@string/playlist_custom_import_text_2"/>
+        <com.xiaopeng.xui.widget.XImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="50dp" android:src="@drawable/img_import_custom"/>
+    </LinearLayout>
+    <com.xiaopeng.xui.widget.XImageButton android:id="@+id/btn_close" android:layout_marginLeft="23dp" android:layout_marginTop="23dp" app:vuiAction="Click" app:vuiEnableViewVuiMode="true" app:vuiLabel="@string/vui_label_close_dialog" style="@style/XButton.Icon.Large.Close"/>
+</com.xiaopeng.xui.widget.XRelativeLayout>

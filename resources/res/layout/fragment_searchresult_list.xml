@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xiaopeng.xui.widget.XLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:focusableInTouchMode="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/top_bar" android:layout_width="match_parent" android:layout_height="74dp" android:layout_marginBottom="20dp" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toTopOf="0">
+        <com.xiaopeng.xui.widget.XTextView android:textSize="@dimen/x_font_title_04_size" android:textColor="@color/x_theme_text_01" android:id="@+id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:layout_marginTop="10dp"/>
+        <com.xiaopeng.musicradio.search.widget.view.PlayAllButton android:layout_gravity="right" android:id="@+id/play_all" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="30dp" app:vuiElementType="BUTTON" app:vuiLabel="@string/play_all_btn_default"/>
+    </FrameLayout>
+    <com.xiaopeng.musicradio.widget.recyclerview.ListVuiRecyclerView android:id="@+id/search_result_list" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:layout_marginTop="-20dp" android:layout_marginRight="30dp" app:vuiLabel="@string/vui_right" app:vuiPriority="level1"/>
+</com.xiaopeng.xui.widget.XLinearLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xiaopeng.xui.widget.XLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.xiaopeng.musicradio.widget.DialogTopLayout android:id="@+id/ms_top_layout" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="20dp">
+        <RelativeLayout android:id="@+id/loading_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.xiaopeng.musicradio.widget.LoadingTipsView android:id="@+id/loadingview" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true" app:loadingTextSize="@dimen/common_tips_smaller" style="@style/LoadingTipsStyle.Smaller"/>
+            <RelativeLayout android:id="@+id/tips_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+                <com.xiaopeng.xui.widget.XImageView android:id="@+id/ic_usbfiles" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="450dp" android:src="@drawable/ic_xxlarge_usbfiles" android:layout_centerHorizontal="true"/>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/center_tips1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="67dp" android:layout_below="@+id/ic_usbfiles" android:layout_centerHorizontal="true">
+                    <com.xiaopeng.xui.widget.XTextView android:textSize="@dimen/x_font_body_01_size" android:textColor="@color/x_theme_text_03" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/usb_tips1"/>
+                    <com.xiaopeng.xui.widget.XTextView android:textSize="@dimen/x_font_body_01_size" android:textColor="@color/x_theme_text_01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginRight="5dp" android:text="@string/usb_tips2"/>
+                    <com.xiaopeng.xui.widget.XTextView android:textSize="@dimen/x_font_body_01_size" android:textColor="@color/x_theme_text_03" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/usb_tips3"/>
+                </LinearLayout>
+                <com.xiaopeng.xui.widget.XTextView android:textSize="@dimen/x_font_body_01_size" android:textColor="@color/x_theme_text_03" android:gravity="center" android:id="@+id/center_tips2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/usb_tips4" android:layout_below="@+id/center_tips1" android:layout_centerHorizontal="true"/>
+                <com.xiaopeng.xui.widget.XTextView android:textSize="@dimen/x_font_body_02_size" android:textColor="@color/x_theme_text_03" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="250dp" android:text="@string/usb_tips5" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+                <com.xiaopeng.xui.widget.XTextView android:textSize="@dimen/x_font_body_02_size" android:textColor="@color/x_theme_text_03" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="210dp" android:text="@string/usb_tips6" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+            </RelativeLayout>
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/left_content" android:visibility="gone" android:layout_width="240dp" android:layout_height="wrap_content" android:layout_marginLeft="110dp">
+            <FrameLayout android:layout_width="240dp" android:layout_height="240dp" android:layout_marginBottom="40dp">
+                <com.xiaopeng.musicradio.widget.MusicCircleImageView android:id="@+id/ms_logo" android:layout_width="240dp" android:layout_height="240dp" app:border_color="@color/color_black_4" app:border_width="1px" app:round_radius="20dp"/>
+            </FrameLayout>
+            <com.xiaopeng.xui.widget.XLinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/ms_collect_layout" android:background="@drawable/layout_large_positive_selector" android:layout_width="240dp" android:layout_height="64dp" android:layout_marginBottom="20dp">
+                <com.xiaopeng.xui.widget.XImageView android:id="@+id/ic_add_collect" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="14dp" android:src="@drawable/ic_add_collect_sheet"/>
+                <com.xiaopeng.xui.widget.XTextView android:textSize="@dimen/x_font_body_02_size" android:textColor="@color/x_theme_text_01" android:gravity="center" android:id="@+id/ms_collect_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="收藏歌单"/>
+            </com.xiaopeng.xui.widget.XLinearLayout>
+        </LinearLayout>
+        <com.xiaopeng.xui.widget.XLinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/play_all_layout" android:background="@drawable/layout_large_positive_selector" android:visibility="gone" android:layout_width="220dp" android:layout_height="66dp" android:layout_marginLeft="40dp" android:layout_marginTop="174dp" android:layout_toRightOf="@+id/left_content">
+            <com.xiaopeng.xui.widget.XImageView android:id="@+id/play_ic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="14dp" android:src="@drawable/ic_btn_playall_black"/>
+            <com.xiaopeng.xui.widget.XTextView android:textSize="26sp" android:textColor="@color/x_theme_text_01" android:gravity="center" android:id="@+id/play_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bt_play_all"/>
+        </com.xiaopeng.xui.widget.XLinearLayout>
+        <com.xiaopeng.musicradio.widget.recyclerview.BaseRecycleView android:id="@+id/ms_detail_rv" android:fadingEdgeLength="@dimen/list_shape_height" android:alwaysDrawnWithCache="true" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="110dp" android:layout_marginRight="110dp" android:layout_marginBottom="@dimen/mini_player_view_height" android:layout_below="@+id/left_content" android:overScrollMode="never" android:requiresFadingEdge="vertical" android:nestedScrollingEnabled="true"/>
+    </RelativeLayout>
+</com.xiaopeng.xui.widget.XLinearLayout>

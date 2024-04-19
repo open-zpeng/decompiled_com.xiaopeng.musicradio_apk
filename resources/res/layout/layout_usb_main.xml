@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xiaopeng.xui.widget.XRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="@dimen/mini_player_view_height">
+    <com.xiaopeng.musicradio.widget.DialogTopLayout android:id="@+id/ms_top_layout" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <com.xiaopeng.musicradio.widget.LoadingTipsView android:id="@+id/loadingview" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="100dp" app:loadingState="loading" app:loadingTextSize="@dimen/common_tips_smaller" style="@style/LoadingTipsStyle.Smaller"/>
+    <RelativeLayout android:id="@+id/tips_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="100dp">
+        <com.xiaopeng.xui.widget.XImageView android:id="@+id/ic_usbfiles" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="373dp" android:src="@drawable/ic_xxlarge_usbfiles" android:layout_centerHorizontal="true"/>
+        <com.xiaopeng.xui.widget.XTextView android:textSize="26sp" android:textColor="@color/x_theme_text_01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="630dp" android:text="@string/usb_main_tips1" android:layout_centerHorizontal="true"/>
+        <com.xiaopeng.xui.widget.XTextView android:textSize="26sp" android:textColor="@color/x_theme_text_03" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="696dp" android:text="@string/usb_main_tips2" android:layout_centerHorizontal="true"/>
+        <com.xiaopeng.xui.widget.XTextView android:textSize="26sp" android:textColor="@color/x_theme_text_03" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="740dp" android:text="@string/usb_main_tips3" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+    <ViewStub android:id="@+id/usb_main_content" android:visibility="gone" android:layout="@layout/stub_usb_main_content" android:inflatedId="@+id/stub_usb_main_content" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <Button android:textSize="32sp" android:id="@+id/btn_test" android:background="@color/red_500" android:visibility="gone" android:layout_width="100dp" android:layout_height="100dp" android:layout_marginLeft="190dp" android:layout_marginTop="20dp" android:text="测试"/>
+</com.xiaopeng.xui.widget.XRelativeLayout>

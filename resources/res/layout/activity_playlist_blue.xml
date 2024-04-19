@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xiaopeng.xui.widget.XRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:tag="layout/activity_playlist_blue_0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.xiaopeng.musicradio.widget.ClickableLoadingTipsView android:id="@+id/loading_tips_view" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="@dimen/mini_player_view_height"/>
+    <com.xiaopeng.musicradio.mine.widget.MineTitleBarLayout android:id="@+id/title_bar" style="@style/XPMine.TitleBar"/>
+    <com.xiaopeng.musicradio.mine.widget.MusicListLogoView android:id="@+id/logo_view" android:visibility="gone" android:layout_marginLeft="@dimen/mine_music_list_margin_left" android:layout_marginTop="@dimen/mine_music_list_margin_top" android:layout_below="@+id/title_bar" style="@style/XPMine.MusicListLogoView"/>
+    <com.xiaopeng.musicradio.widget.recyclerview.ListRecyclerView android:id="@+id/rv_list" android:layout_marginLeft="@dimen/mine_music_list_margin_left" android:layout_marginTop="@dimen/mine_music_list_margin_top" android:layout_marginRight="@dimen/mine_music_list_margin_right" android:layout_below="@+id/logo_view" style="@style/XPMine.List.Activity"/>
+    <com.xiaopeng.xui.widget.XRelativeLayout android:id="@+id/rl_edit_bar" android:visibility="gone" style="@style/XPMine.TitleBar">
+        <com.xiaopeng.xui.widget.XButton android:id="@+id/tv_delete_btn" android:visibility="gone" android:layout_marginRight="@dimen/mine_title_btn_margin_right" android:text="@string/delete" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:vuiEnableViewVuiMode="true" style="@style/XPMine.Title.Button.Two"/>
+        <com.xiaopeng.xui.widget.XImageView android:id="@+id/iv_delete_btn_img" android:visibility="gone" android:layout_marginLeft="@dimen/mine_title_btn_padding" android:src="@drawable/ic_title_btn_delete_text_color" android:layout_alignLeft="@+id/tv_delete_btn" android:layout_centerVertical="true" style="@style/XPMine.TitleButtonImg"/>
+    </com.xiaopeng.xui.widget.XRelativeLayout>
+</com.xiaopeng.xui.widget.XRelativeLayout>

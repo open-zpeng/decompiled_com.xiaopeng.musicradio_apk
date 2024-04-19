@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:tag="layout/playlist_blue_view_0" android:paddingBottom="@dimen/dp_100" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.xiaopeng.xui.widget.XTextView android:gravity="center_vertical" android:id="@+id/tv_category_title" android:layout_marginLeft="@dimen/dp_30" android:layout_marginBottom="26dp" android:text="@string/title_playlist_blue" style="@style/XPMine.ListTitle"/>
+    <com.xiaopeng.xui.widget.XRelativeLayout android:id="@+id/rl_category_item" android:background="@drawable/x_list_item_selector" android:layout_width="match_parent" android:layout_height="@dimen/dp_190" android:layout_marginLeft="@dimen/dp_30" android:layout_marginRight="@dimen/dp_30" android:layout_below="@+id/tv_category_title">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_130" android:layout_centerVertical="true">
+            <com.xiaopeng.xui.widget.XTextView android:textSize="30sp" android:textColor="@color/x_theme_text_01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/playlist_blue_match_title"/>
+            <com.xiaopeng.xui.widget.XTextView android:textSize="20sp" android:textColor="@color/x_theme_text_03" android:layout_width="300dp" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/playlist_blue_match_tips"/>
+        </LinearLayout>
+        <com.xiaopeng.xui.widget.XImageView android:layout_width="82dp" android:layout_height="100dp" android:layout_marginLeft="@dimen/dp_30" android:src="@drawable/img_bluetooth_cover" android:layout_centerVertical="true"/>
+        <com.xiaopeng.xui.widget.XFrameLayout android:id="@+id/fl_blue_logo" android:background="@drawable/mine_blue_logo_corner" android:layout_width="360dp" android:layout_height="140dp" android:layout_marginRight="25dp" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <FrameLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="1px">
+                <com.xiaopeng.xui.widget.XImageView android:id="@+id/logo_1" style="@style/XPMine.BlueLogo"/>
+                <com.xiaopeng.xui.widget.XImageView android:id="@+id/logo_2" android:layout_marginLeft="120dp" style="@style/XPMine.BlueLogo"/>
+                <com.xiaopeng.xui.widget.XImageView android:id="@+id/logo_3" android:layout_marginLeft="240dp" style="@style/XPMine.BlueLogo"/>
+            </FrameLayout>
+            <com.xiaopeng.xui.widget.XImageView android:background="@drawable/mine_blue_logo_stroke" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            <com.xiaopeng.musicradio.mine.widget.AlbumPlayStatusButton android:layout_gravity="bottom|right" android:id="@+id/item_play_status_layout" android:layout_marginRight="@dimen/dp_10" android:layout_marginBottom="@dimen/dp_10" style="@style/XPMine.AlbumPlayBtn"/>
+        </com.xiaopeng.xui.widget.XFrameLayout>
+    </com.xiaopeng.xui.widget.XRelativeLayout>
+</RelativeLayout>

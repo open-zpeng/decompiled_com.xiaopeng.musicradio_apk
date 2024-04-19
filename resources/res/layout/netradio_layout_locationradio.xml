@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:layout_width="892dp" android:layout_height="424dp">
+        <com.xiaopeng.musicradio.widget.LoadingTipsView android:layout_gravity="center" android:id="@+id/location_loading" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <com.xiaopeng.xui.widget.XRelativeLayout android:id="@+id/content_layout" android:background="@drawable/img_fm_banner" android:visibility="gone" android:layout_width="892dp" android:layout_height="424dp">
+            <com.xiaopeng.xui.widget.XImageView android:id="@+id/play_layout" android:background="@drawable/shape_location_play_selector" android:layout_width="match_parent" android:layout_height="131dp" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:layout_marginBottom="32dp" android:layout_alignParentBottom="true"/>
+            <com.xiaopeng.xui.widget.XImageView android:id="@+id/select_bg_one" android:background="@drawable/shape_location_select_bg" android:layout_width="214dp" android:layout_height="214dp" android:layout_marginTop="18dp" android:layout_centerHorizontal="true"/>
+            <com.xiaopeng.xui.widget.XImageView android:id="@+id/select_bg_two" android:background="@drawable/shape_location_select_bg" android:layout_width="190dp" android:layout_height="190dp" android:layout_marginTop="30dp" android:layout_centerHorizontal="true"/>
+            <View android:id="@+id/slect_radio_shpae" android:background="@drawable/select_radio_shape" android:layout_width="218dp" android:layout_height="218dp" android:layout_marginTop="36dp" android:layout_centerHorizontal="true"/>
+            <com.xiaopeng.musicradio.widget.gallery.XmGallery android:id="@+id/location_xpgallery" android:layout_width="860dp" android:layout_height="190dp" android:layout_marginTop="40dp" android:layout_centerHorizontal="true" app:xm_gallery_itemHeight="190dp" app:xm_gallery_itemWidth="200dp"/>
+            <View android:id="@+id/left_click" android:layout_width="120dp" android:layout_height="270dp" android:layout_marginLeft="16dp"/>
+            <View android:id="@+id/right_click" android:layout_width="120dp" android:layout_height="270dp" android:layout_marginLeft="16dp" android:layout_alignParentRight="true"/>
+            <com.xiaopeng.xui.widget.XRelativeLayout android:id="@+id/fm_left" android:background="@drawable/img_fm_left" android:layout_width="120dp" android:layout_height="270dp" android:layout_marginLeft="16dp"/>
+            <com.xiaopeng.xui.widget.XRelativeLayout android:id="@+id/fm_right" android:background="@drawable/img_fm_right" android:layout_width="120dp" android:layout_height="270dp" android:layout_marginRight="16dp" android:layout_alignParentRight="true"/>
+            <com.xiaopeng.xui.widget.XTextView android:textSize="28sp" android:textColor="@color/x_theme_text_01" android:id="@+id/rd_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="140dp" android:layout_marginTop="296dp"/>
+            <com.xiaopeng.xui.widget.XTextView android:textSize="22sp" android:textColor="@color/x_theme_text_03" android:id="@+id/rd_program" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="140dp" android:layout_marginTop="339dp"/>
+            <com.xiaopeng.xui.widget.XImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="341dp" android:layout_marginRight="46dp" android:src="@drawable/ic_logo_ximalaya_small" android:layout_alignParentRight="true"/>
+            <com.xiaopeng.xui.widget.XFrameLayout android:background="@drawable/shape_play_icon_mask" android:layout_width="56dp" android:layout_height="56dp" android:layout_marginLeft="50dp" android:layout_marginTop="305dp">
+                <com.xiaopeng.xui.widget.XImageView android:layout_gravity="center" android:id="@+id/play_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_btn_playall"/>
+                <com.xiaopeng.xui.widget.XFrameLayout android:id="@+id/play_item_layout" android:background="@drawable/shape_play_selector_180" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            </com.xiaopeng.xui.widget.XFrameLayout>
+        </com.xiaopeng.xui.widget.XRelativeLayout>
+    </FrameLayout>
+    <com.xiaopeng.musicradio.vip.view.VipSaleBanner android:id="@+id/vipsale_banner" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:layout_marginBottom="10dp"/>
+</LinearLayout>

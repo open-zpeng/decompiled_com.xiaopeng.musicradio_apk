@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.xiaopeng.xui.widget.XLinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/left_layout" android:layout_width="@dimen/dialog_left_width" android:layout_height="match_parent">
+        <FrameLayout android:id="@+id/image_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.xiaopeng.musicradio.widget.MusicCircleImageView android:id="@+id/left_img" app:border_width="1dp" app:round_radius="@dimen/dialog_left_img_radius" style="@style/dialog_left_img"/>
+            <com.xiaopeng.musicradio.widget.PlayAllLogoLayout android:layout_gravity="bottom|center_horizontal" android:id="@+id/left_playall" android:layout_width="@dimen/dialog_left_playall_width" android:layout_height="@dimen/dialog_left_playall_height" android:layout_marginBottom="20dp"/>
+            <com.xiaopeng.xui.widget.XImageView android:layout_gravity="right" android:id="@+id/top_right_label" android:layout_width="56dp" android:layout_height="27dp"/>
+        </FrameLayout>
+        <FrameLayout android:id="@+id/left_sub_content" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </com.xiaopeng.xui.widget.XLinearLayout>
+</merge>

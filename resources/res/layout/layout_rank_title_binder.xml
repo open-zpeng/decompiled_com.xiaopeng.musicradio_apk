@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xiaopeng.xui.widget.XConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <com.xiaopeng.musicradio.program.choice.view.rank.RankTitleLayout android:id="@+id/rank_title_layout" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+</com.xiaopeng.xui.widget.XConstraintLayout>

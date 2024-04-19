@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xiaopeng.xui.widget.XFrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/zone_item_root" android:layout_width="420dp" android:layout_height="460dp">
+    <com.xiaopeng.xui.widget.XImageView android:id="@+id/item_bg" android:layout_width="420dp" android:layout_height="460dp"/>
+    <com.xiaopeng.xui.widget.XImageView android:layout_width="420dp" android:layout_height="460dp" android:src="@drawable/bg_zone_item_bg_selector"/>
+    <com.xiaopeng.xui.widget.XTextView android:id="@+id/tv_speech_num" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/style_speech_num_big_rect_album"/>
+    <FrameLayout android:layout_gravity="right" android:background="@drawable/shape_play_icon_mask" android:layout_width="80dp" android:layout_height="80dp" android:layout_marginTop="18dp" android:layout_marginRight="10dp">
+        <com.xiaopeng.xui.widget.XImageView android:layout_gravity="center" android:id="@+id/play_icon" android:background="@drawable/ic_btn_playall" android:layout_width="30dp" android:layout_height="30dp"/>
+        <com.xiaopeng.xui.widget.XFrameLayout android:id="@+id/play_item_layout" android:background="@drawable/shape_play_selector_180" android:layout_width="80dp" android:layout_height="80dp"/>
+    </FrameLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="50dp" android:layout_marginTop="41dp">
+        <com.xiaopeng.xui.widget.XTextView android:textSize="@dimen/x_font_title_02_size" android:textColor="@color/x_theme_text_01" android:id="@+id/zone_title" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <com.xiaopeng.xui.widget.XImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:src="@drawable/x_ic_small_back" android:rotation="180"/>
+    </LinearLayout>
+    <com.xiaopeng.xui.widget.XImageView android:id="@+id/collect_one" android:layout_width="216dp" android:layout_height="216dp" android:layout_marginLeft="47dp" android:layout_marginTop="182dp" app:vuiMode="DISABLED"/>
+    <com.xiaopeng.xui.widget.XImageView android:id="@+id/collect_two" android:layout_width="106dp" android:layout_height="106dp" android:layout_marginLeft="267dp" android:layout_marginTop="182dp" android:alpha="0.6" app:vuiMode="DISABLED"/>
+    <com.xiaopeng.xui.widget.XImageView android:id="@+id/collect_three" android:layout_width="106dp" android:layout_height="106dp" android:layout_marginLeft="267dp" android:layout_marginTop="292dp" android:alpha="0.6" app:vuiMode="DISABLED"/>
+</com.xiaopeng.xui.widget.XFrameLayout>

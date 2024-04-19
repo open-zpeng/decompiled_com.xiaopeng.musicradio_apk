@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" android:id="@+id/ll_labels" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <FrameLayout android:id="@+id/layout_vip" android:visibility="gone" android:layout_width="@dimen/dp_85" android:layout_height="@dimen/dp_100">
+        <com.xiaopeng.xui.widget.XImageView android:layout_gravity="center_vertical" android:id="@+id/tv_label_vip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="26dp"/>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/layout_quality" android:visibility="gone" android:layout_width="62dp" android:layout_height="@dimen/dp_100">
+        <com.xiaopeng.xui.widget.XImageView android:layout_gravity="center_vertical" android:id="@+id/tv_label_song_quality" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" app:vuiElementType="BUTTON" app:vuiEnableViewVuiMode="true" app:vuiLabel="@string/vui_song_quality"/>
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@+id/singer_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.xiaopeng.xui.widget.XTextView android:textSize="28sp" android:textColor="@color/x_theme_text_01" android:ellipsize="end" android:gravity="center" android:id="@+id/tv_singer" android:padding="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/music_tags_singer_width" android:lines="1" android:drawableRight="@drawable/ic_24_next" android:drawablePadding="12dp"/>
+    </FrameLayout>
+</LinearLayout>

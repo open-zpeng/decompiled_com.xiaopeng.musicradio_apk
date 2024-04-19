@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.xiaopeng.musicradio.music.player.widget.LyricView android:id="@+id/lrcview" android:layout_width="940dp" android:layout_height="830dp" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0" app:lrcAnimationDuration="800" app:lrcCurrentDividerHeight="75dp" app:lrcDividerHeight="72dp" app:lrcLabel="@string/main_searching_lrc" app:lrcPadding="250dp" app:lrcSelectTextSize="48sp" app:lrcTextSize="38sp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

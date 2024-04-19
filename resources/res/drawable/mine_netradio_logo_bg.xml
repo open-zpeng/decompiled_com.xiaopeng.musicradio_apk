@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true">
+        <layer-list>
+            <item android:gravity="center" android:height="200dp" android:width="200dp">
+                <shape android:shape="oval">
+                    <solid android:color="@color/mine_netradio_logo_bg_out_selected"/>
+                </shape>
+            </item>
+            <item android:gravity="center" android:height="176dp" android:width="176dp">
+                <shape android:shape="oval">
+                    <solid android:color="@color/mine_netradio_logo_bg_in_selected"/>
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <item>
+        <layer-list>
+            <item android:gravity="center" android:height="200dp" android:width="200dp">
+                <shape android:shape="oval">
+                    <solid android:color="@color/mine_netradio_logo_bg_out"/>
+                </shape>
+            </item>
+            <item android:gravity="center" android:height="176dp" android:width="176dp">
+                <shape android:shape="oval">
+                    <solid android:color="@color/mine_netradio_logo_bg_in"/>
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</selector>

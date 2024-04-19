@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xiaopeng.xui.widget.XRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:tag="layout/fragment_mine_playlist_0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/rl_category_title" android:paddingBottom="17dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/mine_category_title_height" android:layout_marginLeft="30dp" android:layout_marginRight="30dp">
+            <com.xiaopeng.xui.widget.XTextView android:id="@+id/tv_category_title" android:text="@string/title_mine_playlist" style="@style/XPMine.ListTitle"/>
+            <View android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1"/>
+            <com.xiaopeng.xui.widget.XTextView android:textSize="20dp" android:textColor="@color/x_theme_text_03" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tips_playlist_custom_1"/>
+            <com.xiaopeng.xui.widget.XTextView android:textSize="20dp" android:textColor="@color/color_forward_normal" android:id="@+id/btn_import" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tips_playlist_custom_2" app:vuiAction="Click" app:vuiElementType="BUTTON" app:vuiEnableViewVuiMode="true"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <com.xiaopeng.musicradio.mine.common.view.MineLoadingTipsView android:id="@+id/loading_tips_view" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/rl_category_title"/>
+    <com.xiaopeng.musicradio.widget.recyclerview.ListRecyclerView android:id="@+id/rv_list" android:layout_marginLeft="30dp" android:layout_marginRight="30dp" android:layout_below="@+id/rl_category_title" app:spanCount="4" style="@style/XPMine.List"/>
+</com.xiaopeng.xui.widget.XRelativeLayout>

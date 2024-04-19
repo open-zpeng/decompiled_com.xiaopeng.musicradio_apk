@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xiaopeng.xui.widget.XLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.xiaopeng.musicradio.widget.DialogTopLayout android:id="@+id/dialog_top_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_20"/>
+    <FrameLayout android:id="@+id/content_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.xiaopeng.musicradio.widget.recyclerview.ListVuiRecyclerView android:id="@+id/rv_reading" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="110dp" android:layout_marginRight="110dp" android:overScrollMode="never" app:vuiLayoutLoadable="true" style="@style/LoadingTipsStyle.Smaller"/>
+    </FrameLayout>
+</com.xiaopeng.xui.widget.XLinearLayout>

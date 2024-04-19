@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xiaopeng.musicradio.music.concentration.recommend.view.MsRmItemLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/rm_item_layout" android:background="@color/transparent" android:layout_width="190dp" android:layout_height="wrap_content"/>

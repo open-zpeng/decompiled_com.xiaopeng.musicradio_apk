@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.xiaopeng.xui.widget.XFrameLayout android:background="@drawable/bg_singer_top_big_slit" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="30dp">
+        <com.xiaopeng.musicradio.widget.recyclerview.BaseRecycleView android:id="@+id/singer_area_rv" android:alwaysDrawnWithCache="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:layout_marginRight="10dp" android:layout_marginBottom="10dp" android:overScrollMode="never" android:nestedScrollingEnabled="true"/>
+    </com.xiaopeng.xui.widget.XFrameLayout>
+    <com.xiaopeng.xui.widget.XFrameLayout android:background="@drawable/bg_singer_top_big_slit" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginRight="30dp">
+        <com.xiaopeng.musicradio.widget.recyclerview.BaseRecycleView android:id="@+id/singer_type_rv" android:alwaysDrawnWithCache="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:layout_marginRight="10dp" android:layout_marginBottom="10dp" android:overScrollMode="never" android:nestedScrollingEnabled="true"/>
+    </com.xiaopeng.xui.widget.XFrameLayout>
+</LinearLayout>

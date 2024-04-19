@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xiaopeng.xui.widget.XFrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.xiaopeng.xui.widget.XImageView android:layout_gravity="top|right" android:id="@+id/image_top" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <com.xiaopeng.musicradio.widget.DialogTopLayout android:id="@+id/zone_top_layout" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="130dp" android:layout_marginBottom="@dimen/mini_player_view_height">
+        <com.xiaopeng.musicradio.widget.LoadingTipsView android:id="@+id/loadingview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+        <com.xiaopeng.musicradio.widget.recyclerview.BaseRecycleView android:id="@+id/zone_detail_rv" android:fadingEdgeLength="@dimen/list_shape_height" android:alwaysDrawnWithCache="true" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="120dp" android:layout_marginRight="60dp" android:overScrollMode="never" android:requiresFadingEdge="vertical" android:nestedScrollingEnabled="true"/>
+    </RelativeLayout>
+</com.xiaopeng.xui.widget.XFrameLayout>

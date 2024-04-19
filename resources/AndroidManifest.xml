@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="7499" android:versionName="V1.6.0_20230925163134_Release" android:compileSdkVersion="28" android:compileSdkVersionCodename="9" package="com.xiaopeng.musicradio" platformBuildVersionCode="28" platformBuildVersionName="9">
+    <uses-sdk android:minSdkVersion="28" android:targetSdkVersion="28"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.FORCE_STOP_PACKAGES"/>
+    <uses-permission android:name="android.permission.REMOTE_AUDIO_PLAYBACK"/>
+    <uses-permission android:name="android.permission.MANAGE_USERS"/>
+    <uses-permission android:name="android.permission.READ_PROFILE"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.CONFIGURE_WIFI_DISPLAY"/>
+    <uses-permission android:name="android.permission.GET_APP_OPS_STATS"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.GET_DETAILED_TASKS"/>
+    <uses-permission android:name="android.permission.REORDER_TASKS"/>
+    <uses-permission android:name="android.permission.START_ANY_ACTIVITY"/>
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL"/>
+    <uses-permission android:name="android.permission.GET_TOP_ACTIVITY_INFO"/>
+    <uses-permission android:name="android.permission.INTERNAL_SYSTEM_WINDOW"/>
+    <uses-permission android:name="android.permission.READ_DREAM_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_DREAM_STATE"/>
+    <uses-permission android:name="android.permission.CONTROL_KEYGUARD"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-permission android:name="android.permission.SUPER_APPLICATION_RUNNING"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.WRITE_MEDIA_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_STORAGE"/>
+    <uses-permission android:name="com.xiaopeng.permission.SERVICE"/>
+    <uses-permission android:name="com.xiaopeng.permission.BROADCAST"/>
+    <uses-permission android:name="com.xiaopeng.permission.DATA_SERVICE"/>
+    <uses-permission android:name="com.xiaopeng.permission.SYSTEM_DELEGATE"/>
+    <uses-permission android:name="com.xiaopeng.permission.CAR_SERVICE"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS"/>
+    <uses-permission android:name="android.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.xiaopeng.vuisceneprovider.scene.read"/>
+    <uses-permission android:name="com.xiaopeng.vuisceneprovider.scene.write"/>
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="xiaopeng.permission.DATA_SERVICE"/>
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"/>
+    <uses-permission android:name="android.car.permission.CAR_VENDOR_EXTENSION"/>
+    <uses-permission android:name="android.car.permission.CAR_EXTERIOR_LIGHTS"/>
+    <uses-permission android:name="android.car.permission.CONTROL_CAR_EXTERIOR_LIGHTS"/>
+    <uses-permission android:name="android.car.permission.CAR_INFO"/>
+    <uses-permission android:name="com.xiaopeng.permission.IPC"/>
+    <uses-permission android:name="com.xiaopeng.permission.LOCATION_SERVICE"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="com.xiaopeng.permission.READ_CONFIGURATION"/>
+    <application android:theme="@style/AppTheme" android:label="@string/app_name" android:icon="@drawable/ic_launcher" android:name="com.xiaopeng.musicradio.MusicApp" android:debuggable="true" android:allowBackup="false" android:largeHeap="true" android:supportsRtl="true" android:usesCleartextTraffic="true" android:appComponentFactory="androidx.core.app.CoreComponentFactory">
+        <meta-data android:name="source" android:value="qq"/>
+        <meta-data android:name="orientation" android:value="vertical"/>
+        <meta-data android:name="productName" android:value="P5"/>
+        <meta-data android:name="dim" android:value="2d"/>
+        <meta-data android:name="SPEECH_OBSERVER" android:value="com.xiaopeng.musicradio.MusicDuiObserver"/>
+        <meta-data android:name="SPEECH_EVENTS" android:value="ximalaya.account.login|music.info.query|music.info.query.title|music.info.query.artist|music.info.query.album|music.playtype|music.is.playing|music.has.bluetooth.musiclist|music.is.history.empty|music.is.play.similar|music.is.collect.empty|music.is.can.collected|music.is.bt.connected|music.is.kugou.authed|music.get.usb.state|music.account.login|music.quality.page.open|command://music.control.play|command://music.control.loop.single|command://music.control.loop.all|command://music.control.random|native://music.search|command://music.control.pause|command://music.control.resume|command://music.control.prev|command://music.control.next|command://music.control.stop|command://music.control.bluetooth.play.random|native://music.playmode.support|command://music.audiobook.play|command://music.list.play|command://music.1212.novel.play|command://music.control.collect|command://music.audiobook.subscribe|command://music.control.collect.cancel|command://music.control.collect.play|command://music.control.sim|command://music.control.sim.cancel|command://music.control.playlist.history.play|command://music.forward|command://music.backward|command://music.settime|command://music.speed.up|command://music.speed.down|command://music.speed.set|command://music.news.play|command://music.dailyrec.play|command://music.control.play.usb|command://fm.local.on|command://fm.local.off|command://fm.network.on|command://fm.network.off|command://fm.play.channel|native://fm.play.channelname|command://fm.play.collection|sys.dialog.continue|sys.wakeup.result|sys.vad.begin|sys.vad.end|sys.dialog.status.changed|command://combo.mode.bio|command://combo.mode.ventilate|command://combo.mode.invisible|command://combo.mode.invisible.off|command://combo.mode.fridge|data://combo.mode.invisible.tts|data://combo.mode.meditation.tts|command://combo.mode.invisible.fast.close|data://combo.mode.bio.tts|data://combo.mode.ventilate.tts|data://combo.mode.fridge.tts|command://combo.mode.bio.off|command://combo.mode.ventilate.off|command://combo.mode.fridge.off|data://combo.mode.wait.tts|command://combo.mode.wait|command://combo.mode.wait.off"/>
+        <meta-data android:name="dim" android:value="2d"/>
+        <activity android:name="com.xiaopeng.musicradio.home.view.HomeActivity" android:exported="true" android:launchMode="singleTask" android:configChanges="fontScale|smallestScreenSize|screenSize|uiMode|screenLayout|orientation|navigation|keyboardHidden|keyboard|touchscreen|locale|mnc|mcc" android:windowSoftInputMode="adjustNothing|stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <data android:scheme="@string/jump_uri_scheme" android:host="@string/jump_uri_host" android:pathPrefix="@string/jump_uri_path_home"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.xiaopeng.musicradio.testsetting.TestSettingActivity" android:launchMode="singleTop"/>
+        <receiver android:name="com.xiaopeng.musicradio.model.common.MusicReceiver">
+            <intent-filter android:priority="9999">
+                <action android:name="com.xiaopeng.ACTION_KEEP_ALIVE"/>
+                <action android:name="com.xiaopeng.broadcast.ACTION_PM_STATUS_CHANGE"/>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED"/>
+                <action android:name="com.xiaopeng.xui.WELCOME_SOUND"/>
+                <action android:name="com.xiaopeng.xuiservice.playbackControl"/>
+                <action android:name="android.intent.action.SCREEN_ON"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.xiaopeng.musicradio.model.common.LocationReceiver">
+            <intent-filter>
+                <action android:name="com.xiaopeng.broadcast.LOCATION_PROVINCE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.xiaopeng.musicradio.model.common.KeycodeReceiver">
+            <intent-filter>
+                <action android:name="com.xiaopeng.intent.action.xkey"/>
+                <action android:name="com.xiaopeng.intent.action.bosskey"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.xiaopeng.musicradio.model.common.IcmControlMusicReceiver">
+            <intent-filter android:priority="1000">
+                <action android:name="android.intent.action.MEDIA_BUTTON"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.xiaopeng.musicradio.testsetting.TestLogoutReceiver">
+            <intent-filter>
+                <action android:name="com.xiaopeng.musicradio.TEST_LOGOUT"/>
+            </intent-filter>
+        </receiver>
+        <activity android:name="com.xiaopeng.musicradio.program.activity.ProgramSubActivity" android:exported="true" android:configChanges="fontScale"/>
+        <activity android:name="com.xiaopeng.musicradio.usb.main.view.UsbMainActivity" android:exported="true" android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="@string/jump_uri_scheme" android:host="@string/jump_uri_host" android:pathPrefix="@string/jump_uri_path_usbmain"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.xiaopeng.musicradio.usb.dir.detail.DirDetailActivity" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.xiaopeng.musicradio.usb.singer.detail.SingerDetailActivity" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.xiaopeng.musicradio.usb.album.detail.AlbumDetailActivity" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.xiaopeng.musicradio.music.concentration.recommend.view.MsRmCategoryActivity" android:exported="true" android:launchMode="singleTop" android:configChanges="fontScale|smallestScreenSize|screenSize|uiMode|screenLayout|orientation|navigation|keyboardHidden|keyboard|touchscreen|locale|mnc|mcc" android:windowSoftInputMode="adjustNothing|stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="@string/jump_uri_scheme" android:host="@string/jump_uri_host" android:pathPrefix="@string/jump_uri_path_category"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.xiaopeng.musicradio.music.main.view.MsMusicDetailActivity" android:exported="true" android:launchMode="singleTop" android:configChanges="fontScale|smallestScreenSize|screenSize|uiMode|screenLayout|orientation|navigation|keyboardHidden|keyboard|touchscreen|locale|mnc|mcc" android:windowSoftInputMode="adjustNothing|stateAlwaysHidden"/>
+        <activity android:name="com.xiaopeng.musicradio.music.main.view.FavMsMusicDetailActivity" android:exported="true" android:launchMode="singleTop" android:configChanges="fontScale|smallestScreenSize|screenSize|uiMode|screenLayout|orientation|navigation|keyboardHidden|keyboard|touchscreen|locale|mnc|mcc" android:windowSoftInputMode="adjustNothing|stateAlwaysHidden"/>
+        <activity android:name="com.xiaopeng.musicradio.music.rank.rank.view.MsRankDetailActivity" android:exported="true" android:launchMode="singleTop" android:configChanges="fontScale|smallestScreenSize|screenSize|uiMode|screenLayout|orientation|navigation|keyboardHidden|keyboard|touchscreen|locale|mnc|mcc" android:windowSoftInputMode="adjustNothing|stateAlwaysHidden"/>
+        <activity android:name="com.xiaopeng.musicradio.music.main.view.FavMsRankDetailActivity" android:exported="true" android:launchMode="singleTop" android:configChanges="fontScale|smallestScreenSize|screenSize|uiMode|screenLayout|orientation|navigation|keyboardHidden|keyboard|touchscreen|locale|mnc|mcc" android:windowSoftInputMode="adjustNothing|stateAlwaysHidden"/>
+        <activity android:name="com.xiaopeng.musicradio.music.main.view.FavMsDailyDetailActivity" android:exported="true" android:launchMode="singleTop" android:configChanges="fontScale|smallestScreenSize|screenSize|uiMode|screenLayout|orientation|navigation|keyboardHidden|keyboard|touchscreen|locale|mnc|mcc" android:windowSoftInputMode="adjustNothing|stateAlwaysHidden"/>
+        <activity android:name="com.xiaopeng.musicradio.music.main.view.FavMsSingerCollectDetailActivity" android:exported="true" android:launchMode="singleTop" android:configChanges="fontScale|smallestScreenSize|screenSize|uiMode|screenLayout|orientation|navigation|keyboardHidden|keyboard|touchscreen|locale|mnc|mcc" android:windowSoftInputMode="adjustNothing|stateAlwaysHidden"/>
+        <activity android:name="com.xiaopeng.musicradio.music.main.view.FavMsSingerDetailActivity" android:exported="true" android:launchMode="singleTop" android:configChanges="fontScale|smallestScreenSize|screenSize|uiMode|screenLayout|orientation|navigation|keyboardHidden|keyboard|touchscreen|locale|mnc|mcc" android:windowSoftInputMode="adjustNothing|stateAlwaysHidden"/>
+        <activity android:name="com.xiaopeng.musicradio.music.importmusic.view.MsImportDetailActivity" android:exported="true" android:launchMode="singleTop" android:configChanges="fontScale|smallestScreenSize|screenSize|uiMode|screenLayout|orientation|navigation|keyboardHidden|keyboard|touchscreen|locale|mnc|mcc" android:windowSoftInputMode="adjustNothing|stateAlwaysHidden"/>
+        <activity android:name="com.xiaopeng.musicradio.music.usb.view.MsUsbDetailActivity" android:exported="true" android:launchMode="singleTop" android:configChanges="fontScale|smallestScreenSize|screenSize|uiMode|screenLayout|orientation|navigation|keyboardHidden|keyboard|touchscreen|locale|mnc|mcc" android:windowSoftInputMode="adjustNothing|stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.xiaopeng.musicradio.music.concentration.daily.view.MsDailyDetailActivity" android:exported="true" android:launchMode="singleTop" android:configChanges="fontScale|smallestScreenSize|screenSize|uiMode|screenLayout|orientation|navigation|keyboardHidden|keyboard|touchscreen|locale|mnc|mcc" android:windowSoftInputMode="adjustNothing|stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="@string/jump_uri_scheme" android:host="@string/jump_uri_host" android:pathPrefix="@string/jump_uri_path_daily"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.xiaopeng.musicradio.music.concentration.audition.view.MsPsevenDetailActivity" android:exported="true" android:launchMode="singleTop" android:configChanges="fontScale|smallestScreenSize|screenSize|uiMode|screenLayout|orientation|navigation|keyboardHidden|keyboard|touchscreen|locale|mnc|mcc" android:windowSoftInputMode="adjustNothing|stateAlwaysHidden"/>
+        <activity android:name="com.xiaopeng.musicradio.music.concentration.audition.view.MsPsevenActivity" android:exported="true" android:launchMode="singleTop" android:configChanges="fontScale|smallestScreenSize|screenSize|uiMode|screenLayout|orientation|navigation|keyboardHidden|keyboard|touchscreen|locale|mnc|mcc" android:windowSoftInputMode="adjustNothing|stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="@string/jump_uri_scheme" android:host="@string/jump_uri_host" android:pathPrefix="@string/jump_uri_path_try_listen"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.xiaopeng.musicradio.music.concentration.zone.view.MsZoneDetailActivity" android:exported="true" android:launchMode="singleTop" android:configChanges="fontScale|smallestScreenSize|screenSize|uiMode|screenLayout|orientation|navigation|keyboardHidden|keyboard|touchscreen|locale|mnc|mcc" android:windowSoftInputMode="adjustNothing|stateAlwaysHidden"/>
+        <activity android:name="com.xiaopeng.musicradio.music.concentration.zone.detail.view.MsZoneChileDetailActivity" android:exported="true" android:launchMode="singleTop" android:configChanges="fontScale|smallestScreenSize|screenSize|uiMode|screenLayout|orientation|navigation|keyboardHidden|keyboard|touchscreen|locale|mnc|mcc" android:windowSoftInputMode="adjustNothing|stateAlwaysHidden"/>
+        <activity android:name="com.xiaopeng.musicradio.music.singer.singer.view.MsSingerDetailActivity" android:exported="true" android:launchMode="singleTop" android:configChanges="fontScale|smallestScreenSize|screenSize|uiMode|screenLayout|orientation|navigation|keyboardHidden|keyboard|touchscreen|locale|mnc|mcc" android:windowSoftInputMode="adjustNothing|stateAlwaysHidden"/>
+        <activity android:name="com.xiaopeng.musicradio.music.singer.singer.view.MsSingerCollectDetailActivity" android:exported="true" android:launchMode="singleTop" android:configChanges="fontScale|smallestScreenSize|screenSize|uiMode|screenLayout|orientation|navigation|keyboardHidden|keyboard|touchscreen|locale|mnc|mcc" android:windowSoftInputMode="adjustNothing|stateAlwaysHidden"/>
+        <activity android:name="com.xiaopeng.musicradio.music.concentration.xpplay.view.MsXpPlayActivity" android:exported="true" android:launchMode="singleTop" android:configChanges="fontScale|smallestScreenSize|screenSize|uiMode|screenLayout|orientation|navigation|keyboardHidden|keyboard|touchscreen|locale|mnc|mcc" android:windowSoftInputMode="adjustNothing|stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="@string/jump_uri_scheme" android:host="@string/jump_uri_host" android:pathPrefix="@string/jump_uri_path_xpplay"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.xiaopeng.musicradio.login.main.view.LoginActivity" android:launchMode="singleTop" android:windowSoftInputMode="adjustNothing|stateAlwaysHidden"/>
+        <activity android:name="com.xiaopeng.musicradio.netradio.concentration.allradio.view.NrAllRadioActivity" android:exported="true" android:launchMode="singleTop" android:configChanges="fontScale|smallestScreenSize|screenSize|uiMode|screenLayout|orientation|navigation|keyboardHidden|keyboard|touchscreen|locale|mnc|mcc" android:windowSoftInputMode="adjustNothing|stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="@string/jump_uri_scheme" android:host="@string/jump_uri_host" android:pathPrefix="@string/jump_uri_path_all_radio"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.xiaopeng.musicradio.netradio.category.category.view.NrCategoryDetailActivity" android:exported="true" android:launchMode="singleTop" android:configChanges="fontScale|smallestScreenSize|screenSize|uiMode|screenLayout|orientation|navigation|keyboardHidden|keyboard|touchscreen|locale|mnc|mcc" android:windowSoftInputMode="adjustNothing|stateAlwaysHidden"/>
+        <activity android:name="com.xiaopeng.musicradio.search.home.view.SearchMainActivity" android:exported="true" android:taskAffinity="@string/search_task" android:launchMode="singleTop" android:configChanges="fontScale">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="@string/jump_uri_scheme" android:host="@string/jump_uri_host" android:path="@string/jump_uri_path_search"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.xiaopeng.musicradio.vip.main.view.VipMainActivity" android:exported="true" android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="@string/jump_uri_scheme" android:host="@string/jump_uri_host" android:pathPrefix="@string/jump_uri_path_vip"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.xiaopeng.musicradio.mine.playlist.blue.view.PlaylistBlueActivity" android:exported="true" android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="@string/jump_uri_scheme" android:host="@string/jump_uri_host" android:pathPrefix="@string/jump_uri_path_blue_music_collect"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.xiaopeng.musicradio.mine.playlist.mobile.view.PlaylistMobileActivity" android:exported="true" android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="@string/jump_uri_scheme" android:host="@string/jump_uri_host" android:pathPrefix="@string/jump_uri_path_phone_album_collect"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.xiaopeng.musicradio.mine.collect.music.view.CollectMusicActivity" android:exported="true" android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="@string/jump_uri_scheme" android:host="@string/jump_uri_host" android:pathPrefix="@string/jump_uri_path_music_collect"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.xiaopeng.musicradio.mine.collect.album.view.CollectAlbumActivity" android:exported="true" android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="@string/jump_uri_scheme" android:host="@string/jump_uri_host" android:pathPrefix="@string/jump_uri_path_album_collect"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.xiaopeng.musicradio.mine.collect.program.view.CollectProgramActivity" android:exported="true" android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="@string/jump_uri_scheme" android:host="@string/jump_uri_host" android:pathPrefix="@string/jump_uri_path_reading_collect"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.xiaopeng.musicradio.mine.collect.netradio.view.CollectNetradioActivity" android:exported="true" android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="@string/jump_uri_scheme" android:host="@string/jump_uri_host" android:pathPrefix="@string/jump_uri_path_netraido_collect"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.xiaopeng.musicradio.mine.history.music.view.HistoryMusicActivity" android:exported="true" android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="@string/jump_uri_scheme" android:host="@string/jump_uri_host" android:pathPrefix="@string/jump_uri_path_music_history"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.xiaopeng.musicradio.mine.history.album.view.HistoryAlbumActivity" android:exported="true" android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="@string/jump_uri_scheme" android:host="@string/jump_uri_host" android:pathPrefix="@string/jump_uri_path_album_history"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.xiaopeng.musicradio.mine.history.program.view.HistoryProgramActivity" android:exported="true" android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="@string/jump_uri_scheme" android:host="@string/jump_uri_host" android:pathPrefix="@string/jump_uri_path_reading_history"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.xiaopeng.musicradio.mine.history.netradio.view.HistoryNetradioActivity" android:exported="true" android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="@string/jump_uri_scheme" android:host="@string/jump_uri_host" android:pathPrefix="@string/jump_uri_path_netraido_history"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.xiaopeng.musicradio.mine.playlist.customdetaillist.view.CustomDetailListActivity" android:exported="true" android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="@string/jump_uri_scheme" android:host="@string/jump_uri_host" android:pathPrefix="@string/jump_uri_path_custom_detail"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.xiaopeng.musicradio.mine.playlist.customplaylist.view.CustomPlaylistActivity" android:exported="true" android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="@string/jump_uri_scheme" android:host="@string/jump_uri_host" android:pathPrefix="@string/jump_uri_path_custom_album_collect"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/XAppTheme" android:name="com.xiaopeng.musicradio.webview.view.WebViewActivity" android:process=":webview" android:launchMode="singleTop"/>
+        <service android:name="com.xiaopeng.musicradio.playercomponent.small.SmallPlayerService"/>
+        <activity android:name="com.xiaopeng.musicradio.playercomponent.big.view.PlayerActivity" android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="@string/jump_uri_scheme" android:host="@string/jump_uri_host" android:pathPrefix="@string/jump_uri_path_player"/>
+            </intent-filter>
+        </activity>
+        <meta-data android:name="com.xiaopeng.musicradio.utils.MusicGlideAppModule" android:value="GlideModule"/>
+        <service android:name="com.ximalaya.ting.android.opensdk.player.service.XmPlayerService" android:exported="true" android:process=":player"/>
+        <service android:name="com.xiaopeng.musicradio.player.PlayerService" android:process=":player"/>
+        <service android:name="com.xiaopeng.musicradio.common.KeepLiveService"/>
+        <provider android:name="com.xiaopeng.lib.apirouter.server.ApiPublisherProvider" android:exported="true" android:authorities="com.xiaopeng.musicradio.api.publisher"/>
+        <service android:name="org.eclipse.paho.android.service.MqttService"/>
+        <provider android:name="com.xiaopeng.lib.framework.netchannelmodule.common.ContextNetStatusProvider" android:exported="false" android:authorities="com.xiaopeng.musicradio.netmodule.provider"/>
+        <service android:name="com.xiaopeng.lib.framework.account.server.XpAccountServiceImpl" android:permission="com.xiaopeng.permission.SERVICE">
+            <intent-filter>
+                <action android:name="com.xiaopeng.lib.framework.account.server"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.xiaopeng.lib.framework.ipcmodule.AgentService" android:permission="com.xiaopeng.permission.SERVICE" android:enabled="true" android:exported="true">
+            <intent-filter>
+                <action android:name="com.xiaopeng.ipc.AgentService"/>
+            </intent-filter>
+        </service>
+    </application>
+</manifest>

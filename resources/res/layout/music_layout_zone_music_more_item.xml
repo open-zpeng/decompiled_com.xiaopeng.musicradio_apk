@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="100dp">
+        <com.xiaopeng.xui.widget.XLinearLayout android:gravity="center_vertical" android:id="@+id/title_layout" android:background="@drawable/shape_more_bg" android:layout_width="wrap_content" android:layout_height="match_parent">
+            <com.xiaopeng.xui.widget.XTextView android:textSize="@dimen/x_font_title_03_size" android:textColor="@color/x_theme_text_01" android:id="@+id/zone_title" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <com.xiaopeng.xui.widget.XImageView android:id="@+id/zone_more" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:src="@drawable/x_ic_small_back" android:rotation="180"/>
+        </com.xiaopeng.xui.widget.XLinearLayout>
+        <com.xiaopeng.xui.widget.XLinearLayout android:gravity="center" android:id="@+id/play_radom" android:background="@drawable/x_btn_ghost_large_positive_selector" android:visibility="gone" android:layout_width="244dp" android:layout_height="64dp" android:layout_marginLeft="50dp" android:layout_toRightOf="@+id/title_layout" android:layout_centerVertical="true" app:vuiMode="DISABLED">
+            <com.xiaopeng.xui.widget.XImageView android:id="@+id/play_radom_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_btn_playall_text_color"/>
+            <com.xiaopeng.xui.widget.XTextView android:textSize="@dimen/x_font_body_02_size" android:textColor="@color/x_theme_text_01" android:id="@+id/random_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:text="@string/radom_listen"/>
+        </com.xiaopeng.xui.widget.XLinearLayout>
+    </RelativeLayout>
+    <com.xiaopeng.musicradio.widget.recyclerview.BaseRecycleView android:id="@+id/zome_main_rv" android:alwaysDrawnWithCache="true" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="35dp" android:overScrollMode="never" android:nestedScrollingEnabled="true"/>
+</LinearLayout>

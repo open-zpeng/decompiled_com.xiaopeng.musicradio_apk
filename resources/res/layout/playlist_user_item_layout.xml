@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xiaopeng.xui.widget.XRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/rl_root" android:tag="layout/playlist_user_item_layout_0" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <View android:layout_width="@dimen/mine_album_view_item_width" android:layout_height="@dimen/mine_album_view_item_width"/>
+    <com.xiaopeng.xui.widget.XImageView android:id="@+id/iv_logo" android:layout_width="@dimen/mine_album_view_item_width" android:layout_height="@dimen/mine_album_view_item_width" android:src="@drawable/img_new_cover"/>
+    <com.xiaopeng.xui.widget.XFrameLayout android:id="@+id/iv_ripple" android:background="@drawable/shape_play_selector_20" android:layout_width="@dimen/mine_album_view_item_width" android:layout_height="@dimen/mine_album_view_item_width" android:layout_alignLeft="@+id/iv_logo" android:layout_alignTop="@+id/iv_logo" app:vuiElementType="BUTTON"/>
+    <com.xiaopeng.xui.widget.XTextView android:id="@+id/tv_title" android:layout_marginTop="10dp" android:text="@string/title_add_playlist" android:layout_below="@+id/iv_logo" android:layout_alignLeft="@+id/iv_logo" style="@style/XPMine.AlbumTitle"/>
+    <com.xiaopeng.xui.widget.XTextView android:id="@+id/tv_speech_num" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1" android:layout_alignLeft="@+id/iv_logo" android:layout_alignTop="@+id/iv_logo" style="@style/style_speech_num_big_rect_album"/>
+</com.xiaopeng.xui.widget.XRelativeLayout>

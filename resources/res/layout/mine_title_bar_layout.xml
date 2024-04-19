@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.xiaopeng.xui.widget.XImageButton android:id="@+id/btn_back" android:layout_marginLeft="14dp" android:layout_centerVertical="true" app:vuiAction="Click" app:vuiEnableViewVuiMode="true" app:vuiLabel="@string/title_back" style="@style/XButton.Icon.Large.Back"/>
+    <com.xiaopeng.xui.widget.XTextView android:ellipsize="end" android:id="@+id/tv_title" android:layout_marginLeft="110dp" android:maxWidth="700dp" android:layout_centerVertical="true" style="@style/XPMine.Title"/>
+    <com.xiaopeng.xui.widget.XButton android:id="@+id/tv_title_btn" android:visibility="gone" android:layout_marginRight="@dimen/mine_title_btn_margin_right" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/XPMine.Title.Button.Two"/>
+    <com.xiaopeng.xui.widget.XImageView android:id="@+id/iv_title_btn_img" android:visibility="gone" android:layout_marginLeft="@dimen/mine_title_btn_padding" android:layout_alignLeft="@+id/tv_title_btn" android:layout_centerVertical="true" style="@style/XPMine.TitleButtonImg"/>
+    <com.xiaopeng.xui.widget.XButton android:id="@+id/tv_title_edit_btn" android:visibility="gone" android:layout_marginRight="@dimen/mine_title_btn_margin_right" android:text="@string/complete" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/XPMine.Title.Button.Two"/>
+    <com.xiaopeng.xui.widget.XImageView android:id="@+id/iv_title_edit_btn_img" android:visibility="gone" android:layout_marginLeft="@dimen/mine_title_btn_padding" android:src="@drawable/ic_32_finish" android:layout_alignLeft="@+id/tv_title_edit_btn" android:layout_centerVertical="true" style="@style/XPMine.TitleButtonImg"/>
+</merge>

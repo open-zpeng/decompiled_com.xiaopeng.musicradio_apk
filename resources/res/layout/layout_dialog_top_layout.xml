@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="100dp">
+        <com.xiaopeng.xui.widget.XImageButton android:gravity="center" android:id="@+id/dialog_back" android:layout_centerVertical="true" android:layout_marginStart="14dp" app:vuiDisableHitEffect="true" app:vuiEnableViewVuiMode="true" app:vuiLabel="@string/vui_titil_back" style="@style/XButton.Icon.Large.Back"/>
+        <com.xiaopeng.xui.widget.XLinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/dialog_right_layout" android:layout_width="wrap_content" android:layout_height="66dp" android:layout_marginRight="30dp" android:minWidth="190dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/XButton.Ghost.Large.Positive">
+            <FrameLayout android:layout_width="32dp" android:layout_height="32dp" android:layout_marginRight="@dimen/dp_12">
+                <ImageView android:id="@+id/dialog_sub_icon" android:layout_width="32dp" android:layout_height="32dp"/>
+                <ProgressBar android:layout_gravity="center_vertical" android:id="@+id/dialog_sub_loading" android:visibility="gone" android:layout_width="32dp" android:layout_height="32dp" android:indeterminateDuration="1000" style="@style/progress_24_loading"/>
+            </FrameLayout>
+            <com.xiaopeng.xui.widget.XTextView android:textSize="@dimen/x_font_body_01_size" android:textColor="@color/x_theme_text_01" android:id="@+id/dialog_sub" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="管理" app:vuiEnableViewVuiMode="true"/>
+        </com.xiaopeng.xui.widget.XLinearLayout>
+        <com.xiaopeng.xui.widget.XTextView android:textSize="36sp" android:textColor="@color/x_theme_text_01" android:ellipsize="end" android:id="@+id/dialog_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="110dp" android:layout_marginRight="50dp" android:maxWidth="650dp" android:maxLines="1" android:includeFontPadding="false" android:layout_centerVertical="true" android:layout_toStartOf="@+id/dialog_right_layout" android:layout_alignParentStart="true"/>
+    </RelativeLayout>
+</merge>

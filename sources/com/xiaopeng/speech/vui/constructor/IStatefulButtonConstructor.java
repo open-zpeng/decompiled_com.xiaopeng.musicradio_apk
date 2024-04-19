@@ -1,0 +1,5 @@
+package com.xiaopeng.speech.vui.constructor;
+/* loaded from: classes2.dex */
+public interface IStatefulButtonConstructor {
+    void construct(bhz bhzVar);
+}

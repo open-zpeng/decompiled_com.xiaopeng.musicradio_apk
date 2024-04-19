@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list>
+    <item>
+        <shape>
+            <corners android:radius="20dp"/>
+            <size android:height="@dimen/x_btn_mix_mid_height" android:width="@dimen/x_btn_mix_mid_width"/>
+            <solid android:color="@color/x_primary_neutral_color_selector"/>
+        </shape>
+    </item>
+    <item>
+        <drawable app:rippleRadius="20dp" app:rippleSupportScale="true" class="com.xiaopeng.xui.drawable.ripple.XRippleDrawable"/>
+    </item>
+</layer-list>
